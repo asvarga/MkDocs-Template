@@ -1,0 +1,65 @@
+site_name: todo
+site_url: https://www.todo.com
+plugins:
+  - ezlinks
+  - search
+  - tags:
+      tags_file: wiki/index.md
+  - blog
+  - offline
+theme:
+  favicon: files/todo.png
+  icon:
+    logo: fontawesome/solid/question    # todo
+    repo: fontawesome/brands/github
+  name: material
+  palette:
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+  features:
+    - content.code.copy
+    - content.code.select
+    - navigation.indexes
+    # - navigation.instant  # bug: requires manual page reload for equations to render
+    # - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+extra:
+  tags: 
+    Ordinal: Ordinal
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.todo.com
+    - icon: fontawesome/brands/github
+      link: https://www.todo.com
+    - icon: fontawesome/brands/stack-overflow
+      link: https://www.todo.com
+    - icon: fontawesome/brands/youtube
+      link: https://www.todo.com
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tilde
+extra_javascript:
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - stylesheets/extra.css

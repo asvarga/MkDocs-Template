@@ -1,5 +1,6 @@
 site_name: todo
 site_url: https://www.todo.com
+repo_url: https://github.com/asvarga/MkDocs-Template    # todo
 plugins:
   - ezlinks
   - search

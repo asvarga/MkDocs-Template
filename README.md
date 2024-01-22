@@ -7,7 +7,7 @@ This is a template for using [Material for MkDocs](https://squidfunk.github.io/m
 
 Find and replace all occurrences of "todo" in file names/contents.
 
-Example: https://github.com/asvarga/MkDocs-Template
+Example: https://asvarga.github.io/MkDocs-Template/
 
 ## Local Viewing
 
